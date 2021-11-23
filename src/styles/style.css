@@ -1,0 +1,233 @@
+#proda h1 {
+    font-family: 'Oswald', sans-serif !important;
+}
+
+#proda h2 {
+    font-family: 'Oswald', sans-serif !important;
+}
+
+#proda h3 {
+    font-family: 'Oswald', sans-serif !important;
+}
+
+#proda h4 {
+    font-family: 'Oswald', sans-serif !important;
+}
+
+#proda h5 {
+    font-family: 'Oswald', sans-serif !important;
+    font-weight: 300 !important;
+}
+
+#proda h6 {
+    font-family: 'Oswald', sans-serif !important;
+    font-weight: 300 !important;
+}
+
+#proda p {
+    font-family: 'Oswald', sans-serif !important;
+}
+
+#proda a {
+    font-family: 'Oswald', sans-serif !important;
+}
+
+#proda button {
+    font-family: 'Oswald', sans-serif !important;
+}
+
+#proda input {
+    font-family: 'Oswald', sans-serif !important;
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+/* Position the image container (needed to position the left and right arrows) */
+
+.container {
+    position: relative;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Add a pointer when hovering over the thumbnail images */
+
+.cursor {
+    cursor: pointer;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* Container for image text */
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body>section>div>div>div:nth-child(1)>div>div.row {
+    width: 20% !important;
+    display: inline !important;
+}
+
+.mySlides {
+    width: 75% !important;
+    float: right;
+}
+
+
+/* Six columns side by side */
+
+.column {
+    width: 20% !important;
+    margin-right: 10px !important;
+    margin-bottom: 10px;
+}
+
+
+/* Add a transparency effect for thumnbail images */
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+#proda>div>div>div.col-md-6.ml-5 {
+    padding-left: 80px;
+}
+
+#proda>div>div>div.col-md-6.ml-5.mt-2>div.colorr>button>i {
+    color: black !important
+}
+
+#proda>div>div>div.col-md-6.ml-5.mt-2>div.colorr>button {
+    color: white;
+    padding: 10px !important;
+    border: 1px solid white;
+}
+
+#proda>div>div>div.col-md-6.ml-5.mt-2>div.sizee>button {
+    background: white !important;
+    border: 0px !important;
+    margin-bottom: 10px;
+}
+
+#proda>div>div>div.col-md-6.ml-5.mt-2>div.sizee>button:hover {
+    background: black !important;
+    color: white !important;
+}
+
+#proda>div>div>div.col-md-6.ml-5.mt-2>div.size-guide>input[type=number] {
+    color: black;
+    width: 80px;
+    font-weight: 600;
+}
+
+#proda>div>div>div.col-md-6.ml-5.mt-2>div.size-guide>input[type=button]:nth-child(2) {
+    padding: 2px 100px !important;
+    border: 2px solid #55bc9d;
+    background: transparent !important;
+    color: white !important;
+    font-weight: 500 !important;
+}
+
+.accordion {
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    background: transparent;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background: transparent;
+    border-bottom: 2px solid white;
+}
+
+#proda>div>div>div.col-md-6.ml-5.mt-2>div:nth-child(13)>button {
+    font-size: 20px;
+}
+
+#proda>div>div>div.col-md-6.ml-5.mt-2>div:nth-child(13)>div>p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#proda>div>div>div.col-md-6.ml-5.mt-2>a,
+#proda>div>div>div.col-md-6.ml-5.mt-2>a>i {
+    font-size: 15px !important;
+}

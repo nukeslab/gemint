@@ -1,0 +1,31 @@
+export const products =
+    [
+        {
+            'cardmanufacturer': 'Panini',
+            'league': 'NBA',
+            'sport': 'Basketball',
+            'year': '2019-20',
+            'name': 'Premium'
+        },
+        {
+            'cardmanufacturer': 'Panini',
+            'league': 'NBA',
+            'sport': 'Basketball',
+            'year': '2018-19',
+            'name': 'Platinum'
+        },
+        {
+            'cardmanufacturer': 'Panini',
+            'league': 'MLB',
+            'sport': 'Baseball',
+            'year': '2019-20',
+            'name': 'Ghost'
+        },
+        {
+            'cardmanufacturer': 'Panini',
+            'league': 'NBA',
+            'sport': 'Basketball',
+            'year': '2019-20',
+            'name': 'Premium'
+        }
+    ]

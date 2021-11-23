@@ -1,0 +1,109 @@
+.accordion-button:not(.collapsed) {
+    background: #3fd999 !important;
+    color: #fff !important;
+}
+
+button.accordion-button {
+    background: #3fd999;
+    color: #fff;
+    border-top-right-radius: 15px !important;
+    border-top-left-radius: 15px !important;
+}
+
+.accordion-item {
+    background: transparent !important;
+    border: none !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+
+/* reset page start */
+
+.reset small {
+    font-size: 14px;
+}
+
+.reset small a {
+    color: #3fd999 !important;
+}
+
+
+/* reset page end*/
+
+
+/* Pricing page start*/
+
+.pricing h1 span {
+    font-size: 2.5rem;
+    color: #3fd999;
+}
+
+.pricing small {
+    color: #fbfbfb;
+    font-size: 12px;
+}
+
+.nav {
+    display: inline-flex !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background: #3fd999 !important;
+    border: 2px solid #fff !important;
+}
+
+.nav-pills .nav-link {
+    border: 2px solid #3fd999 !important;
+}
+
+.black-bg {
+    background: #000;
+    background-image: linear-gradient(#1e1e2052, #1e1e20);
+    border-radius: 20px;
+}
+
+.black-bg h4 {
+    color: #3fd999;
+    font-weight: 600;
+}
+
+.black-bg h5 span {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.black-bg a {
+    background: #3fd999;
+    border: 2px solid #fff;
+    color: #000 !important;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.black-bg a:hover {
+    transition: 0.5s;
+    background: #000;
+    color: #3fd999 !important;
+}
+
+.green-card {
+    background: #fff !important;
+}
+
+.black-bg ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.black-bg ul li {
+    padding: 10px 0;
+}
+
+
+/* Pricing page end*/
