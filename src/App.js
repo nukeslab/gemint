@@ -28,7 +28,7 @@ import Breakers from "./pages/breakers";
 import Profile from "./pages/profile";
 import apply from "./pages/apply";
 import NoPageFound from "./pages/noPageFound";
-import Randomizer from "./pages/freeRandomizer";
+import RandomizerPage from "./pages/freeRandomizer";
 import FAQ from "./pages/FAQ";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
@@ -45,7 +45,17 @@ import { loadStripe } from "@stripe/stripe-js";
 import { publishable_key } from "./config";
 import Footer from "./components/footer";
 import pricingPage from "./pages/pricingPage";
-
+import standard from "./pages/standard";
+import feature from "./pages/feature";
+import "./styles/styleSheet.css";
+import Randomizer from "./components/randomizer";
+import RandomizerTeam from "./components/Randomizers/randomTeam";
+import payment from "./pages/payment";
+import Settings from "./pages/settings";
+import CheckoutPage from "./pages/checkout";
+import Randomize from "./pages/randomize";
+import Apply from "./pages/apply";
+import Test from "./pages/test"
 const stripePromise = loadStripe(publishable_key);
 
 function App() {
@@ -59,6 +69,7 @@ function App() {
             <div>
               <Switch>
                 <Route exact path="/" component={home} />
+                <Route exact path="/RandomizerPage" component={RandomizerPage} />
                 <Route exact path="/browse" component={browse} />
                 <Route path="/browse/:breakId" component={postedBreak} />
                 <Route exact path="/breakers" component={Breakers} />
@@ -66,13 +77,19 @@ function App() {
                 <Route exact path="/login" component={login} />
                 <Route exact path="/signup" component={signup} />
                 <Route exact path="/apply" component={apply} />
-                <Route exact path="/randomizer" component={Randomizer} />
+                <Route exact path="/Randomizer" component={Randomizer} />
                 <Route exact path="/faq" component={FAQ} />
                 <Route exact path="/contact" component={Contact} />
                 <Route exact path="/terms" component={TermsAndConditions} />
                 <Route exact path="/privacy" component={PrivacyPolicy} />
                 <Route exact path="/pricingPage" component={pricingPage} />
-
+                <Route exact path="/feature" component={feature} />
+                <Route exact path="/standard" component={standard} />
+                <Route exact path="/RandomizerTeam" component={RandomizerTeam} />
+                <Route exact path="/profile" component={Profile} />
+                <Route exact path="/postedBreak" component={postedBreak} />
+                <Route exact path="/test" component={Test} />
+                  <NoPageFound />
                 <Route
                   exact
                   path="/checkout/confirm"

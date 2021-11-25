@@ -15,6 +15,11 @@ import {
   IoLogoInstagram,
 } from "react-icons/io";
 
+
+//product-detail
+
+
+
 const PostedBreak = (props) => {
   const { cartTotal, setCartTotal, cart, setCart, user } =
     useContext(globalContext);

@@ -52,7 +52,7 @@ class AccountNav extends Component {
   logoutHandler = (event) => {
     localStorage.removeItem("AuthToken");
   };
-
+  
   render() {
     const { classes } = this.props;
 

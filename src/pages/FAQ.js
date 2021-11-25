@@ -79,10 +79,6 @@ const FAQ = () => {
             </div>
         </div>  
     </div>
-            {/* row 1 End */}
-
-            {/* Footer */}
-            <Footer />
         </div>
     )
 }

@@ -23,6 +23,6 @@ export default function Randomizer(props) {
   };
 
   return (
-    <div>{props.product ? <BreakRandomizer /> : <p>Loading......</p>}</div>
+     <div>{props.product ? <BreakRandomizer /> : <p>Loading......</p>}</div>
   );
 }

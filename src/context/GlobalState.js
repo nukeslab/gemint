@@ -44,6 +44,10 @@ function GlobalState({ children }) {
   useEffect(() => {
     if (user) {
       console.log("app user", user);
+      console.log(user.username);
+      console.log(user.firstname);
+      console.log(user.lastname);
+      console.log(user.email);
       setEmail(user.email);
     } else {
       console.log("querying for user");
@@ -87,6 +91,7 @@ function GlobalState({ children }) {
         setUser,
       }}
     >
+      
       {children}
     </globalContext.Provider>
   );

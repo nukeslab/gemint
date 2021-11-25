@@ -8,7 +8,7 @@ function Settings() {
   const [shippingAddress, setAddress] = useState("");
   const { user } = useContext(globalContext);
 
-  console.log("user", user);
+  console.log(user);
   function resetPassword() {
     alert("Gehrig needs to build this still.");
   }
@@ -17,10 +17,11 @@ function Settings() {
     alert(
       "This would update an email or username (if the username is available)"
     );
+    console.log(user)
   }
   return (
     <div className="account-containers">
-      <AccountNav />
+      {/* <AccountNav /> */}
       <h1>Settings</h1>
 
       <p>Manage your Gemint account.</p>
@@ -31,7 +32,7 @@ function Settings() {
         <button disabled>Save</button>
       )}
 
-      {user ? (
+      {user? (
         <div>
           <h2>Account</h2>
           <label>Username</label>
@@ -81,7 +82,11 @@ function Settings() {
           ></input>
         </div>
       ) : (
-        <p>...</p>
+        // <p>...</p>
+        <div>
+          <h2>Account</h2>
+          
+        </div>
       )}
     </div>
   );

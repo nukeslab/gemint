@@ -15,6 +15,8 @@ export default function Randomizer() {
       dt.toLocaleString(DateTime.TIME_WITH_SHORT_OFFSET)
   );
 
+
+
   function shuffleNew() {
     const array = names.split(`\n`);
 
@@ -53,45 +55,41 @@ export default function Randomizer() {
 
   return (
     <div>
-      <Nav />
       <div className="randomizer-title">
-        <p>
-          <Link className="logo" to="/">
-            <span className="logo">
-              GE<span className="highlight-mint">MINT</span>
-            </span>
-          </Link>
-          <br />
-          <span className="text-sm">Official</span>
-          <br />
-          <span className="text-lg">RANDOMIZER</span>{" "}
-          <span className="text-sm">BETA</span>
-        </p>
+     
 
         <div className="randomizer">
           <div className="randomizer-form">
-            <label className="highlight-mint">
-              Type to add items, each on a new line.
-            </label>
-
             <textarea
+            class="homte"
               id="randomizer-input"
-              rows="30"
-              cols="40"
+              rows="15"
+              cols="auto"
               value={names}
               onChange={e => handleChange(e.target.value)}
             ></textarea>
-
-            <label>
-              Randomize counter: {count} <br /> Timestamp: {timestamp}
+      <div class="row">
+                        <div class="col-md-4">
+                        <label>
+              Randomize counter: {count}
             </label>
-            <button className="btn-outline" onClick={() => shuffleNew()}>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-6 ">
+                        <label> Timestamp: {timestamp}</label>
+                        </div>
+                    </div>
+            <br/>
+            <div class="row">
+                        <div class="col-md-12 my-3">
+                        <button className="abtn abtn4 btn-outline" onClick={() => shuffleNew()}>
               Randomize
-            </button>
-            <button className="btn-dark" onClick={() => resetRandomizer()}>
+            </button> <button className=" abtn5 btn-dark" onClick={() => resetRandomizer()}>
               Reset
             </button>
-            <Dice />
+                        </div>
+                    </div>
+
           </div>
         </div>
       </div>

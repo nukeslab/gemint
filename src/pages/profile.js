@@ -5,7 +5,7 @@ import axios from "axios";
 import { userContext } from "../userContext";
 import BreakCard from "../components/breakCard";
 
-function Profile() {
+function Profile(props) {
   const [isLoading, setLoading] = useState(true);
   const [sellerBreaks, setSellerBreaks] = useState();
   const user = useContext(userContext);
@@ -26,24 +26,14 @@ function Profile() {
         setLoading(false);
       });
   }, [user]);
-
+console.log(user)
   return (
     <div>
       <Nav />
       <div className="container">
-        <h1>{user.username}</h1>
+        <h1>Hello{user.username}</h1>
 
-        {isLoading ? (
-          <p>Loading...</p>
-        ) : (
-          sellerBreaks.map(postedBreak => {
-            return (
-              <Link to={`/browse/${postedBreak.breakId}`}>
-                <BreakCard key={postedBreak.breakId} {...postedBreak} />
-              </Link>
-            );
-          })
-        )}
+  
       </div>
     </div>
   );

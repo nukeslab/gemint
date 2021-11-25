@@ -15,8 +15,8 @@ function Footer() {
         <div class="row  text-center">
             <div class="col">
                 <a href="/faq" class="mx-3">FAQ</a>
-                <a href="/terms-and-conditions" class="mx-3 ">TERMS</a>
-                <a href="/privacy-policy" class="mx-3 ">PRIVACY</a>
+                <a href="/terms" class="mx-3 ">TERMS</a>
+                <a href="/privacy" class="mx-3 ">PRIVACY</a>
             </div>
         </div><br />
         <div class="row text-center">

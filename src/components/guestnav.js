@@ -4,6 +4,8 @@ import Login from "../pages/login"
 import Logo from "../assets/images/logo.png";
 import GuestHamburger from "./guestHamburger";
 import { AiFillCaretDown } from "react-icons/ai";
+import feature from '../pages/feature';
+import pricingPage from '../pages/pricingPage'
 
 class guestnavigation extends Component {
   render() {
@@ -21,7 +23,7 @@ class guestnavigation extends Component {
         <Link className = "link" to ="/" > Randomizer</Link> 
         </div> <ul class = "dropdown-menu" aria-labelledby = "navbarDropdown" ><li > 
         < div class = "dropdown-item" >
-        <Link className = "linkDropdown" to = "/standard-with-slider" > Standard </Link></div > </li> 
+        <Link className = "linkDropdown" to = "/standard" > Standard </Link></div > </li> 
         <li >
         <div class = "dropdown-item" >
         <Link className = "linkDropdown"to = "/tier" > Tier </Link>
@@ -29,10 +31,10 @@ class guestnavigation extends Component {
         </li> 
         <li class = "nav-item" >
         <div class = "nav-item nav-link active" >
-        <Link className = "link" to = "/feature" > Shop </Link></div >
+        <Link className = "link" to = "/feature" >  Shop </Link></div >
         </li> <li class = "nav-item" >
         <div class = "nav-item nav-link" >
-        <Link className = "link"to = "/pricing" > Pricing </Link> 
+        <Link className = "link"to = "/pricingPage" > Pricing </Link> 
         </div> </li> 
         </ul> 
         </div>

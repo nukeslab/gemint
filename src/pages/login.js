@@ -12,13 +12,12 @@ import Footer from "../components/footer";
 
 function Login(props) {
   const { user, setUser } = useContext(globalContext);
-
+  
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState([]);
   const [loading, setLoading] = useState(false);
   let history = useHistory();
-
   const handleSubmit = (event) => {
     event.preventDefault();
     setLoading(true);
@@ -27,9 +26,9 @@ function Login(props) {
       password: password,
     };
     axios
-      .post(
-        "https://us-central1-gemint-app.cloudfunctions.net/api/login",
-        userData
+    .post(
+      "https://us-central1-gemint-app.cloudfunctions.net/api/login",
+      userData
       )
       .then((response) => {
         localStorage.setItem("AuthToken", `Bearer ${response.data.token}`);
@@ -37,20 +36,20 @@ function Login(props) {
         const authToken = localStorage.getItem("AuthToken");
         axios.defaults.headers.common = { Authorization: `${authToken}` };
         axios
-          .get("https://us-central1-gemint-app.cloudfunctions.net/api/user")
-          .then((response) => {
-            console.log("data", response.data.userCredentials);
-            setUser(response.data.userCredentials);
-            setEmail(user.email);
-          })
-          .catch((error) => {
-            console.log(error);
-          })
-          .then(() => {
-            try {
-              if (
-                typeof props.location.state.loginRedirect !== "undefined" ||
-                props.location.state.loginRedirect !== undefined
+        .get("https://us-central1-gemint-app.cloudfunctions.net/api/user")
+        .then((response) => {
+          console.log("data", response.data.userCredentials);
+          setUser(response.data.userCredentials);
+          setEmail(user.email);
+        })
+        .catch((error) => {
+          console.log(error);
+        })
+        .then(() => {
+          try {
+            if (
+              typeof props.location.state.loginRedirect !== "undefined" ||
+              props.location.state.loginRedirect !== undefined
               ) {
                 history.push(props.location.state.loginRedirect);
               }
@@ -58,15 +57,16 @@ function Login(props) {
               history.push("/");
             }
           });
-      })
-      .catch((error) => {
-        console.log(error);
-        setLoading(false);
-      });
-  };
-
-  return (
-    <div>
+        })
+        .catch((error) => {
+          console.log(error);
+          setLoading(false);
+        });
+      };
+      
+      console.log(user)
+      return (
+        <div>
             {/* NavBar Component Call*/}
             <Nav />
             {/* NavBar End*/}
@@ -109,13 +109,13 @@ function Login(props) {
                                     error={errors.password ? true : false}
                                     onChange={(e) => setPassword(e.target.value)}
                                   />
-                                    <small><a href="#" style={{float:"right", fontSize:"12px"}}>Forgot Password</a></small>
+                                   
                                 </div>
-                
                             </div>
+                <ForgotPassword />
                         </div>
                         <button
-                          className="btn"
+                          className="btn abtn"
                           type="submit"
                           onClick={(e) => handleSubmit(e)}
                           disabled={loading || !email || !password}>
